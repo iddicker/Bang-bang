@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<title> Ian's Website </title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<meta name="description" content="Ian Dickerson's first website" />
+<meta name="keywords" content="html, learn, udemy, css, Centscere," />
+<head>
+<script>
+function counter () {
+if (typeof (Storage) !=="undifined") {
+	if (sessionStorage.counter) {
+		sessionStorage.counter = Number (sessionStorage.counter) +1;
+	} else {
+		sessionStorage.counter = 1;
+	}
+	document.getElementById("number").innerHTML = sessionStorage.counter;
+	if (sessionStorage.counter>1) {
+		document.getElementById("number").innerHTML+"<p>Refresh the page</p>";
+	}
+} else {
+	document.getElementById("number").innerHTML="Sorry, your browser does not" + "support web storage...";
+}
+}
+</script>
+</head>
+<body>
+<div style="background-color: green; padding:5px;">
+<nav> <a href="http://www.centscere.com">My Company </a> |
+<a href="http://www.dyingscene.com">Music  Blog </a>
+</nav>
+</div>
+<table border="1" bordercolor="#333333" width="100%" cellpadding="0"
+<tr>
+<th height="20" colspan="3"> <h1><a id="top">My</a> First Website</h1>
+<p>Don't judge. It's my <i>first</i> time doing top this!</p>
+</th></tr>
+<tr>
+<th width="20%">Testing
+<div style="background-color: black; padding: 10px;">
+	<div style="background-color: green; padding: 1px; margin: 20px">
+    	</div>
+    	<div style="background-color: green; padding: 1px; margin: 20px">
+    	</div>
+    </div>
+</div>
+</th>
+<th width="60%"><img src="http://i1295.photobucket.com/albums/b635/Ian_Dickerson/Ian_zpsbc273eca.jpg" border="5" bordercolor="black" width="200" alt="Ian Dickerson" cellspacing="2"/> <p>Hi, My name is Ian Dickerson. I am 23 years old. I live in New York City.<br /> I graduated from Syracuse University in 2013. I grew up in Southern California.<br /> My whole family still lives in California. I am the only person in my immediate<br /> family that currently lives on the East Coast.</p>
+
+<img src="http://i1295.photobucket.com/albums/b635/Ian_Dickerson/a3f7d727-62fe-4e79-af86-300e06163f77_zpsb6ab412b.png" border="2" width="250" bordercolor="black" alt=" Centscere Logo" cellpadding="2"/><br />
+<p>I founded a company called Centscere. Centscere is a social media donation <br />platform that allows people to give to their favorite charity simply through <br /> their everyday social media behavior. Centscere is a combination of words. "Cent" as in &cent <br /> and "sincere". My best friend is my business partner. His name is Frank Taylor.</p>
+<img src="http://i1295.photobucket.com/albums/b635/Ian_Dickerson/10177864_488920977902328_8809408052778508984_n_zps7ab55b2b.jpg" border="2" width="400" alt=" The Centscere Team"/>
+
+<p>Please go check out our website. You can see it<a href="http://www.centscere.com/" target="_blank"> here</a>. We've worked really hard on it. <br /> A big reason why I am learning to code is because I want to understand<br /> what and how are developers have made such an awesome site for us!</p>
+<br />
+<!-- At thi point I am practicing working on creating a form. Erase only the code for the form, not the code that make up the survey -->
+<form method="post" action="http://www.centscere.com">
+<p>Did you enjoy learning a little bit about me? Enter in your name and ill get back to you and tell you more!</p> <input type="text" name="Visitor Name" width="200"/> <br />
+<p>Please tell me a little more about yourself!</p>
+<select name="gender">
+<option value="NA" disabled="disabled" selected="selected">Select Gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="robot">Robot</option>
+</select>
+<p> You know about me, I want to know about you! Use the space below to tell me a little bit about yourself.</p>
+<textarea name="Visitor Info" rows="3" cols="30">Tell me about yourself!</textarea>
+<p>At this moment in time, on a scale from 1-10 how happy are you? </p>
+1<input type="radio" name="Happy" id="rd1" value="rad1">
+2<input type="radio" name="Happy" id="rd2" value="rad2">
+3<input type="radio" name="Happy" id="rd3" value="rad3">
+4<input type="radio" name="Happy" id="rd4" value="rad4">
+5<input type="radio" name="Happy" id="rd5" value="rad5">
+6<input type="radio" name="Happy" id="rd6" value="rad6">
+7<input type="radio" name="Happy" id="rd7" value="rad7">
+8<input type="radio" name="Happy" id="rd8" value="rad8">
+9<input type="radio" name="Happy" id="rd9" value="rad9">
+10<input type="radio" name="Happy" id="rd10" value="rad10">
+
+<p> What would make you happier?</p>
+<input type="checkbox" name="checkbox" id="money"> Money
+<input type="checkbox" name="checkbox" id="pizza"> Pizza
+<input type="checkbox" name="checkbox" id="car"> New Car
+<input type="checkbox" name="checkbox" id="friends"> Friends
+<br /> <br />
+<button type="submit">Finished!</button>
+</form>
+<!-- practicing geolocating. I may have to put java script in the Head FEEL FREE TO DELETE THIS PARAGRAPH-->
+<p> Check this out! If you click the following button we can count. We can literally count to a ZILLION!<br /><br />
+<button onclick="counter()" type="button">Click Me Bitch!</button>
+<div id="number"></div>    
+
+<p> This is all I have for now. Please click <a href="#top">here</a> to go to the top of the page. Thanks!</p>
+</th>
+<th width="20%">
+Testing
+</th>
+</tr>
+
+
+</td>
+</tr>
+</table>
+<footer> Contact: Ian Dickerson (949) 735-7526
+</footer>
+</body>
+</html>
